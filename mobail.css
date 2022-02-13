@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*reusebal component*/
+.h1-style{
+    font-size: 28px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+/*end reusable component*/
+.p-style {
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+/*start navbar */
+
+
+.nav-img {
+    width: 280px;
+
+}
+.navbar ul li a {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.navbar-toggler-icon{
+    border: none;
+    color: red;
+}
+
+/*start home section*/
+
+#home-section{
+ background: linear-gradient(to right,yellow,rgba(255, 255, 0, 0.541),rgba(255, 255, 0, 0.246)),url(portfoli-img/crazy.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ min-height: 700px;
+ padding-top: 210px;
+ padding-bottom: 80px;
+ 
+}
+
+.h1-anim {   
+    text-align: center;
+    display: block;
+    font-size: 6rem;
+    color:#f8faf9;
+    font-weight: 600;
+}
+
+.home-button1{
+    margin-right: -10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border: 1px solid white;
+    background: #343a40;
+    padding: 5px 0px;
+    border-radius: 5px;
+    float: right;
+    width: 260px;
+}
+.home-button2{
+    margin-left: -10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border: 1px solid white;
+    background: #efec2170;
+    padding: 5px 0px;
+    border-radius: 5px; 
+    float: left; 
+    width: 260px;
+}
+.home-button2:hover{
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.842);
+    border: 1px solid #efec21;
+}
+
+/* start-about-section */
+.svg-section{
+    margin-top: -150px;
+}
+#about-section {
+    margin-bottom: 0px;
+    margin-top: -50px;
+    background: #ffffff;
+
+}
+.card-border {
+    
+    border-radius: 20px;
+}
+
+.about-p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-button {
+    padding: 8px 40px;
+    border-radius: 30px;
+    background: white;
+    color: #343a40;
+    border: 1px solid #343a40;
+    font-size: 20px;
+    font-weight:600;
+}
+.about-button:hover {
+    background: #343a40;
+    color: white;
+    font-size: 20px;
+    font-weight:600;
+}
+
+.about-img {
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.637);
+}
+/* skil-section */
+
+
+#skill-section{
+ padding-top: 90px;   
+ background: #f0f1f3;
+ color: #183153;
+ padding-bottom: 200px;
+}
+.ul-skil li {
+    list-style: none;
+    margin: 30px 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+
+.ul-skil li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-radius: 1000px;
+    background-color: #e0e0e0;
+    top: calc(100% + 5px);
+    left: 0px;
+}
+
+.ul-skil li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 10px;
+    background-color: #f44336;
+    top: calc(100% + 5px);
+    left: 0px;
+
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.ul-skil li.html::after{
+    animation-name: html;
+}
+
+@keyframes html{
+  to{
+      width: 90%;
+  }
+}
+
+.ul-skil li.css::after{
+    animation-name: css;
+}
+
+@keyframes css{
+  to{
+      width: 70%;
+  }
+
+}
+
+.ul-skil li.bootstarp::after{
+    animation-name: bootstarp;
+}
+
+@keyframes bootstarp{
+  to{
+      width: 95%;
+  }
+}
+.ul-skil li.java-script::after{
+    animation-name: java-script;
+}
+
+@keyframes java-script{
+  to{
+      width: 65%;
+  }
+}
+
+.ul-skil li.mysql::after{
+    animation-name: mysql;
+}
+
+@keyframes mysql{
+  to{
+      width: 75%;
+  }
+}
+
+.s-i{
+    font-size: 6rem;
+    color: cornflowerblue;
+}
+
+.ul-skil li.php::after{
+    animation-name: php;
+}
+
+@keyframes php{
+  to{
+      width: 55%;
+  }
+}
+/*start clint section*/
+
+#clint-section{
+    padding-bottom: 80px;
+    background: #0099ff;
+    margin-top: -100px;
+}
+.svg-section-clint{
+    margin-top: -250px;
+}
+.color{
+ background: red;
+}
+.clint-section{
+    margin-top: 0px;
+    padding-top: 0px;
+    background: #0099ff;
+}
+.hr-clint {
+    height: 4px;
+    width: 50px;
+    background: yellow;
+    margin: 0 auto;
+}
+.clint-img {
+    width: 150px;
+    height: 150px   ;
+    border-radius: 50%;
+}
+.hr-style {
+    margin: auto;
+    width: 60px;
+    height: 2px;
+    background-color: yellowgreen;
+}
+
+/* start skill section*/
+
+
+
+/* start prising section */
+
+#pricing-section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #eef2f7;
+}
+
+.img-card {
+    width: 150px;
+}
+.card{
+    background: #f4effb;
+}
+
+.btn-card{
+    margin: 30px 0px;
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    padding: 7px;
+    display: block;
+    text-align: center;
+    background-color: greenyellow;
+}
+.card-body p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.card-body p:hover{
+    border: 1px solid black;
+    border-radius: 20px;
+    
+    margin: 0 auto;
+}
+
+.p-hr {
+    width: 50px;
+    margin: auto;
+    text-align: center;
+    background: #286ef0;
+    height: 2px;
+}
+/* start qus-sectionn*/
+#qus-section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.aks-img{
+    width: 450px;
+    height: 300px;
+}
+.h1-qus {
+  margin-bottom: 50px;  
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+#qus-section h3 {
+   cursor: pointer; 
+   font-weight: 600;
+   color: #161e2c;
+}
+
+/*start foooter section */
+
+#footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #161e2c;
+    color: white;
+}
+.f-h1{
+    font-size: 26px;
+    font-weight: 600;
+}
+.p{
+    margin-top: -7px;
+    color: whitesmoke;
+}
+.fab{
+font-size: 28px;
+margin-left: 15px;
+padding: 5px;
+}
+.fab:hover{
+  color: red;  
+}
+.footer-button{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    background: #50ded3;
+    padding: 7px 0px;
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.footer-email {   
+    width: 80%;
+    display: bolck;
+    font-size: 16px;
+    padding: 7px 7px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+
+/* responsive section*/
+
+
+@media screen and (max-width:576px){
+    /*home-section*/
+    .home-button1{
+        margin: 0 auto;
+        float: none;
+        position:center;
+        text-align: center;      
+    }
+    .home-button2{
+        margin: 0 auto;
+        float: none;
+        color: red;
+    }
+    .svg-section{
+        margin-top: -50px;
+    }
+    /*start-clint*/
+
+    .s-c {
+        text-align: center;
+    }
+   
+}
